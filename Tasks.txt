@@ -1,0 +1,13 @@
+Tasks:
+
+Page Structure + 1 Page - Bobby
+Banner - Anurag
+Footer - Shilpa
+CSS - Ram
+Dojo Custom Build - Anuj
+Localization - Latha
+
+Dojo 1.8 + AMD
+
+
+
