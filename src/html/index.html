@@ -2,29 +2,38 @@
 <html>
 	<head>
 		<title>Beyond Today</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />		
+		
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
 		<link rel="shortcut icon" href="favicon.ico"></link>
 		
 		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
 		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
 		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
-		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		<!--<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/Carousel.css">-->
+		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/iphone/iphone.css">
 		
-		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
 		<script>
 			require([
 				"dojo/parser", 
 				"dijit/layout/ContentPane",
 				"dojox/mobile/RoundRect",
+				"dojox/mobile/Carousel",
+				"dojox/mobile/compat",
+				"dojox/mobile/CarouselItem",
+				"dojox/mobile/SwapView"
 			]);		
-		</script>		
+		</script>	
+	
 	</head>
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/Index", "dojo/domReady!"], function(nls){
-				dojo.byId("main_title").innerHTML = nls.Title;
-				dojo.byId("main_para1_Heading").innerHTML = nls.Para1_Heading;
 				dojo.byId("main_para1").innerHTML = nls.Para1;
 			});
 		</script>	
@@ -35,9 +44,52 @@
 			</div>	
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
-			<h1 style="text-align: center;" id="main_title"></h1>
 			
-			<h2 id="main_para1_Heading"></h2>
+			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" style="background-color:#6D6D6D"
+						data-dojo-props='height:"400px", navButton:true, numVisible:1, title:"Videos & Photos"'>
+				<!-- View #1 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.CarouselItem"
+						data-dojo-props='src:"../images/photos/408610_469884223051714_680579846_n.jpg", footerText:"All"'>
+					</div>
+				</div>
+				<!-- View #2 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.CarouselItem"
+						data-dojo-props='src:"../images/photos/457909_418313658208771_1100151264_o.jpg", footerText:"Description"'>
+					</div>
+				</div>
+				<!-- View #3 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.CarouselItem"
+						data-dojo-props='src:"../images/photos/313542_277863132253825_1820109526_n.jpg", footerText:"Description"'>
+					</div>
+				</div>	
+				<!-- View #4 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.CarouselItem"
+						data-dojo-props='src:"../images/photos/456893_424061747633962_651195811_o.jpg", footerText:"Description"'>
+					</div>
+				</div>	
+				<!-- View #5 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.CarouselItem"
+						data-dojo-props='src:"../images/photos/319105_277862802253858_1063157032_n.jpg", footerText:"Description"'>
+					</div>
+				</div>
+				<!-- View #6 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.CarouselItem"
+						data-dojo-props='src:"../images/photos/470534_424060750967395_1708189169_o.jpg", footerText:"Description"'>
+					</div>
+				</div>		
+				<!-- View #7 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<iframe title="Swagit Video Player" width="640" height="360" 
+						src="http://austintx.swagit.com/e/05242012-565/20/" frameborder="0" allowfullscreen></iframe>				
+				</div>					
+			</div>			
+				
 			<div style="text-align: left;">
 				<p id="main_para1"></p>
 			</div>		
