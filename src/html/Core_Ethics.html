@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
+		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		
+		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<script>
+			require([
+				"dojo/parser", 
+				"dijit/layout/ContentPane",
+				"dojox/mobile/RoundRect",
+			]);		
+		</script>		
+	</head>
+	<body class="claro">
+		<script>
+			require(["dojo/i18n!bt/nls/Core_Ethics", "dojo/domReady!"], function(nls){
+				dojo.byId("main_title").innerHTML = nls.Title;
+				dojo.byId("CoreEthics_Heading").innerHTML = nls.CoreEthics_Heading;
+				dojo.byId("CoreEthics_Para").innerHTML = nls.CoreEthics_Para;
+			});
+		</script>
+	
+	
+	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
+				Loading... 
+			</div>	
+		</div>	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<h1 style="text-align: center;" id="main_title"></h1>
+			
+			<h2 id="CoreEthics_Heading">Core Ethics</h2>
+			<div style="text-align: left;">
+				<p id="CoreEthics_Para"></p>
+			</div>	
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
+				Loading... 
+			</div>	
+		</div>		
+	</body>
+</html>

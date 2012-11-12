@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
+		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		
+		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<script>
+			require([
+				"dojo/parser", 
+				"dijit/layout/ContentPane",
+				"dojox/mobile/RoundRect",
+			]);		
+		</script>		
+	</head>
+	<body class="claro">
+		<script>
+			require(["dojo/i18n!bt/nls/ROSC", "dojo/domReady!"], function(nls){
+				dojo.byId("main_title").innerHTML = nls.Title;
+				dojo.byId("PeerSupport_Heading").innerHTML = nls.PeerSupport_Heading;
+				dojo.byId("PeerSupport_Para").innerHTML = nls.PeerSupport_Para;
+				dojo.byId("Recovery_Heading").innerHTML = nls.Recovery_Heading;
+				dojo.byId("Recovery_Para").innerHTML = nls.Recovery_Para;
+			});
+		</script>
+	
+	
+	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
+				Loading... 
+			</div>	
+		</div>	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<h1 style="text-align: center;" id="main_title"></h1>
+			
+			<h2 id="PeerSupport_Heading">Peer Support</h2>
+			<div style="text-align: left;">
+				<p id="PeerSupport_Para"></p>
+			</div>	
+			
+			<h2 id="Recovery_Heading">Recovery</h2>
+			<div style="text-align: left;">
+				<p id="Recovery_Para"></p>
+			</div>	
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
+				Loading... 
+			</div>	
+		</div>		
+	</body>
+</html>
