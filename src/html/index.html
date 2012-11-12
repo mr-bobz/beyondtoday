@@ -15,6 +15,7 @@
 		<script src='../dojo/dojo/dojo.js'></script>		
 		<script>
 			require([
+				"dojo",
 				"dojo/parser", 
 				"dijit/layout/ContentPane",
 				"dojox/mobile/RoundRect",
@@ -81,7 +82,8 @@
 				<!-- View #7 -->
 				<div data-dojo-type="dojox.mobile.SwapView">
 					<iframe title="Swagit Video Player" width="640" height="360" 
-						src="http://austintx.swagit.com/e/05242012-565/20/" frameborder="0" allowfullscreen></iframe>				
+						src="http://austintx.swagit.com/e/05242012-565/20/" frameborder="0" 'allowfullscreen'>
+					</iframe>				
 				</div>					
 			</div>			
 				
