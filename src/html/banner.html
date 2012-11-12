@@ -1,22 +1,8 @@
 
 <link rel="stylesheet" type="text/css" href="../themes/banner.css">
 
-<script>
-	require([
-		"dijit/Toolbar", 
-		"dijit/form/Button", 
-		"dijit/form/ToggleButton", 
-		"dijit/ToolbarSeparator",
-		"dojox/mobile",
-		"dijit/form/DropDownButton",
-		"dijit/DropDownMenu",
-		"dijit/MenuItem",
-		"dijit/PopupMenuItem"
-	]);
-</script>
-
 <div>
-	<a href="/index.html">
+	<a href="/index.html" title="Home">
 		<img src="../images/logo_small.png" alt="Beyond Today Logo"/> 
 	</a>	
 	<div id="toolbar1" data-dojo-type="dijit/Toolbar">
@@ -25,17 +11,17 @@
 	  <div data-dojo-type="dijit/DropDownMenu" id="aboutus">
 		<div data-dojo-type="dijit/MenuItem">Who we are?
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("index.html");
+				location.replace("WhoWeAre.html");
 			</script>
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Our history
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("index.html");
+				location.replace("History.html");
 			</script>	
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Advisory Council
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("index.html");
+				location.replace("AdvisoryCouncil.html");
 			</script>
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Provider Council
@@ -50,7 +36,7 @@
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Volunteer Council
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("index.html");
+				location.replace("volunteer.html");
 			</script>
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Referrals
@@ -71,8 +57,16 @@
 		<div data-dojo-type="dijit/PopupMenuItem">
         <span>ROSC</span>
 			<div data-dojo-type="dijit/Menu" id="rosc">
-				<div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){alert('Submenu 1!')}">Peer Support</div>
-				<div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){alert('Submenu 2!')}">Recovery</div>
+				<div data-dojo-type="dijit/MenuItem">Peer Support
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("PeerSupport.html");
+					</script>				
+				</div>
+				<div data-dojo-type="dijit/MenuItem">Recovery
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("Recovery.html");
+					</script>
+				</div>
 			</div>
 		</div>
 		<div data-dojo-type="dijit/PopupMenuItem">
@@ -124,7 +118,7 @@
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Volunteer
 		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("index.html");
+			location.replace("volunteer.html");
 		</script>
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Contact Us
