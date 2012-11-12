@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
+		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		
+		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<script>
+			require([
+				"dojo/parser", 
+				"dijit/layout/ContentPane",
+				"dojox/mobile/RoundRect",
+				"dojox/mobile/Carousel",
+				"dojox/mobile/compat",
+				"dojox/mobile/CarouselItem",
+				"dojox/mobile/SwapView"
+			]);		
+		</script>		
+	</head>
+	<body class="claro">
+		<script>
+			require(["dojo/i18n!bt/nls/About", "dojo/domReady!"], function(nls){
+				dojo.byId("Advisory_Heading").innerHTML = nls.Advisory_Heading;
+				dojo.byId("Advisory_Para1").innerHTML = nls.Advisory_Para1;
+				dojo.byId("Advisory_Para2").innerHTML = nls.Advisory_Para2;
+				dojo.byId("Advisory_Para3").innerHTML = nls.Advisory_Para3;
+				dojo.byId("Advisory_Para4").innerHTML = nls.Advisory_Para4;
+			});
+		</script>
+	
+	
+	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
+				Loading... 
+			</div>	
+		</div>	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<h1 style="text-align: center;" id="Advisory_Heading"></h1>
+			
+			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" style="background-color:#6D6D6D"
+						data-dojo-props='height:"400px", navButton:true, numVisible:1, title:""'>
+				<!-- View #1 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<table>
+						<tr>
+							<td>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Blessing.jpg", footerText:"Dr. Blessing Anyatonwu "'>
+								</div>
+							</td>
+							<td>
+								<div style="text-align: left;">
+									<p id="Advisory_Para1"></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+					
+				</div>
+				<!-- View #2 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<table>
+						<tr>
+							<td>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Brad.jpg", footerText:"Dr. Brad Singleton"'>
+								</div>
+							</td>
+							<td>
+								<div style="text-align: left;">
+									<p id="Advisory_Para2"></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!-- View #3 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<table>
+						<tr>
+							<td>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Debbie.jpg", footerText:"Debbie Trammell"'>
+								</div>
+							</td>
+							<td>
+								<div style="text-align: left;">
+									<p id="Advisory_Para3"></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>	
+				<!-- View #4 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<table>
+						<tr>
+							<td>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Ruslyn.jpg", footerText:"Ruslyn Smith"'>
+								</div>
+							</td>
+							<td>
+								<div style="text-align: left;">
+									<p id="Advisory_Para4"></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>	
+			</div>				
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
+				Loading... 
+			</div>	
+		</div>		
+	</body>
+</html>

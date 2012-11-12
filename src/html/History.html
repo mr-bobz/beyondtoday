@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
+		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
+		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		
+		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<script>
+			require([
+				"dojo/parser", 
+				"dijit/layout/ContentPane",
+				"dojox/mobile/RoundRect",
+			]);		
+		</script>		
+	</head>
+	<body class="claro">
+		<script>
+			require(["dojo/i18n!bt/nls/About", "dojo/domReady!"], function(nls){
+				dojo.byId("History_Heading").innerHTML = nls.History_Heading;
+				dojo.byId("History_Para").innerHTML = nls.History_Para;
+			});
+		</script>
+	
+	
+	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
+				Loading... 
+			</div>	
+		</div>	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<h1 style="text-align: center;" id="History_Heading"></h1>
+			
+			<div style="text-align: left;">
+				<p id="History_Para"></p>
+			</div>		
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
+				Loading... 
+			</div>	
+		</div>		
+	</body>
+</html>
