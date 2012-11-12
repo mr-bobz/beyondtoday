@@ -7,7 +7,10 @@
 		"dijit/form/Button", 
 		"dijit/form/ToggleButton", 
 		"dijit/ToolbarSeparator",
-		"dojox/mobile"
+		"dojox/mobile",
+		"dijit/form/DropDownButton",
+		"dijit/DropDownMenu",
+		"dijit/MenuItem"
 	]);
 </script>
 
@@ -16,29 +19,83 @@
 		<img src="../images/logo_small.png" alt="Beyond Today Logo"/> 
 	</a>	
 	<div id="toolbar1" data-dojo-type="dijit/Toolbar">
-		<div data-dojo-type="dijit/form/Button" id="toolbar1.cut"
-			data-dojo-props="iconClass:'homeIcon', showLabel:true">Home
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("index.html");//hello
-			</script>			
-		</div>
-		<div data-dojo-type="dijit/form/Button" id="toolbar1.copy"
-			data-dojo-props="iconClass:'aboutIcon', showLabel:true">About Us
+				<div data-dojo-type="dijit/form/DropDownButton">
+				  <span>About Us</span>
+				  <div data-dojo-type="dijit/DropDownMenu" id="aboutUsMenu">
+					<div data-dojo-type="dijit/MenuItem">Current Projects
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>	
+					</div>
+					<div data-dojo-type="dijit/MenuItem">Accomplishments
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>
+					</div>
+					<div data-dojo-type="dijit/MenuItem">Who we are?
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>
+					</div>
+					<div data-dojo-type="dijit/MenuItem">Advisory Council
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>
+					</div>
+				  </div>
+				</div>
+				<div data-dojo-type="dijit/form/DropDownButton">
+				  <span>What we do?</span>
+				  <div data-dojo-type="dijit/DropDownMenu" id="whatwedo">
+					<div data-dojo-type="dijit/MenuItem">ROSC
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>	
+					</div>
+					<div data-dojo-type="dijit/MenuItem">Changing Mind
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>
+					</div>
+				  </div>
+				</div>
+				<div data-dojo-type="dijit/form/DropDownButton">
+				  <span>Referrals</span>
+				  <div data-dojo-type="dijit/DropDownMenu" id="referrals">
+					<div data-dojo-type="dijit/MenuItem">Partners
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("index.html");
+						</script>	
+					</div>
+					<div data-dojo-type="dijit/MenuItem">Resources
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("index.html");
+					</script>
+					</div>
+				   </div>
+				</div>
+				<div data-dojo-type="dijit/form/ToggleButton" id="eligibility"
+					data-dojo-props="iconClass:'eligibilityIcon', showLabel:true">Eligibility
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("About.html");
+					</script>			
+				</div>
+				<div data-dojo-type="dijit/form/ToggleButton" id="coreethics"
+					data-dojo-props="iconClass:'ethicsIcon', showLabel:true">Core Ethics
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("About.html");
+					</script>			
+				</div>
+				<div data-dojo-type="dijit/form/ToggleButton" id="volunteer"
+					data-dojo-props="iconClass:'volunteerIcon', showLabel:true">Volunteer
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
 				location.replace("About.html");
 			</script>			
 		</div>
-		<div data-dojo-type="dijit/form/Button" id="toolbar1.paste"
-			data-dojo-props="iconClass:'servicesIcon', showLabel:true">Services
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("About.html");
-			</script>			
-		</div>
-		<div data-dojo-type="dijit/form/ToggleButton" id="toolbar1.bold"
-			data-dojo-props="iconClass:'donateIcon', showLabel:true">Donate
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("About.html");
-			</script>			
-		</div>
+				<div data-dojo-type="dijit/form/ToggleButton" id="others"
+					data-dojo-props="iconClass:'othersIcon', showLabel:true">Others
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("About.html");
+					</script>			
 	</div>
 </div>
