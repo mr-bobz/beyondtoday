@@ -1,33 +1,41 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
-		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		<title>Beyond Today</title>
 		
-		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />		
+		
+		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
+		<link rel="shortcut icon" href="favicon.ico"></link>
+		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">
+		
+		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
 		<script>
 			require([
+				"dojo",
 				"dojo/parser", 
 				"dijit/layout/ContentPane",
 				"dojox/mobile/RoundRect",
+				"dojox/mobile/Carousel",
+				"dojox/mobile/compat",
+				"dojox/mobile/CarouselItem",
+				"dojox/mobile/SwapView"
 			]);		
-		</script>		
+		</script>	
+	
 	</head>
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/ROSC", "dojo/domReady!"], function(nls){
 				dojo.byId("main_title").innerHTML = nls.Title;
-				dojo.byId("Education_Heading").innerHTML = nls.Education_Heading;
-				dojo.byId("Education_Para").innerHTML = nls.Education_Para;
-				dojo.byId("InformingPolicy_Heading").innerHTML = nls.InformingPolicy_Heading;
-				dojo.byId("InformingPolicy_Para").innerHTML = nls.InformingPolicy_Para;
+				dojo.byId("Recovery_Heading").innerHTML = nls.Recovery_Heading;
+				dojo.byId("Recovery_Para").innerHTML = nls.Recovery_Para;
+
 			});
-		</script>
-	
-	
+		</script>	
 	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
@@ -37,15 +45,11 @@
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<h1 style="text-align: center;" id="main_title"></h1>
 			
-			<h2 id="Education_Heading">Education</h2>
+			<h2 id="Recovery_Heading">Recovery</h2>
 			<div style="text-align: left;">
-				<p id="Education_Para"></p>
+				<p id="Recovery_Para"></p>
 			</div>	
-			
-			<h2 id="InformingPolicy_Heading">Informing Policy</h2>
-			<div style="text-align: left;">
-				<p id="InformingPolicy_Para"></p>
-			</div>	
+
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">

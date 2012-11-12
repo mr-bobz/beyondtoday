@@ -1,20 +1,31 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
-		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+		<title>Beyond Today</title>
 		
-		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />		
+		
+		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
+		<link rel="shortcut icon" href="favicon.ico"></link>
+		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">
+		
+		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
 		<script>
 			require([
+				"dojo",
 				"dojo/parser", 
 				"dijit/layout/ContentPane",
 				"dojox/mobile/RoundRect",
+				"dojox/mobile/Carousel",
+				"dojox/mobile/compat",
+				"dojox/mobile/CarouselItem",
+				"dojox/mobile/SwapView"
 			]);		
-		</script>		
+		</script>	
+	
 	</head>
 	<body class="claro">
 		<script>
@@ -22,12 +33,8 @@
 				dojo.byId("main_title").innerHTML = nls.Title;
 				dojo.byId("PeerSupport_Heading").innerHTML = nls.PeerSupport_Heading;
 				dojo.byId("PeerSupport_Para").innerHTML = nls.PeerSupport_Para;
-				dojo.byId("Recovery_Heading").innerHTML = nls.Recovery_Heading;
-				dojo.byId("Recovery_Para").innerHTML = nls.Recovery_Para;
 			});
-		</script>
-	
-	
+		</script>	
 	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
@@ -42,10 +49,6 @@
 				<p id="PeerSupport_Para"></p>
 			</div>	
 			
-			<h2 id="Recovery_Heading">Recovery</h2>
-			<div style="text-align: left;">
-				<p id="Recovery_Para"></p>
-			</div>	
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
