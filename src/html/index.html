@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Beyond Today</title>
-		
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>Beyond Today</title>	
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
-		<meta name="apple-mobile-web-app-capable" content="yes" />		
-		
+		<meta name="apple-mobile-web-app-capable" content="yes" />				
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
-		<link rel="shortcut icon" href="favicon.ico"></link>
-		
-		<link rel="stylesheet" type="text/css" href="../themes/main.css">
-		
+		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
 		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
+		<!-- Load banner requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
+		</script>	
+		<!-- Copy these for all htmls - END -->	
+		<!-- Current html's dojo requires -->
 		<script>
 			require([
 				"dojo",
@@ -26,19 +28,7 @@
 				"dojox/mobile/SwapView",
 				"dojox/mobile/Video"
 			]);		
-		</script>
-		<!-- Load banner requires here for faster parsing -->		
-		<script>
-			require([
-				"dijit/Toolbar", 
-				"dijit/form/Button", 
-				"dijit/form/DropDownButton",
-				"dijit/DropDownMenu",
-				"dijit/Menu",
-				"dijit/MenuItem",
-				"dijit/PopupMenuItem"
-			]);
-		</script>		
+		</script>	
 	
 	</head>
 	<body class="claro">
@@ -46,14 +36,14 @@
 			require(["dojo/i18n!bt/nls/Index", "dojo/domReady!"], function(nls){
 				dojo.byId("main_para1").innerHTML = nls.Para1;
 			});
-		</script>	
+		</script>			
 	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
 				Loading... 
 			</div>	
 		</div>	
-		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>			
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div style="text-align: left;">
 				<p id="main_para1"></p>
 			</div>	

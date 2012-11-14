@@ -1,13 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
-		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
-		
-		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>Beyond Today</title>	
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />				
+		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
+		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
+		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
+		<!-- Load banner requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
+		</script>	
+		<!-- Copy these for all htmls - END -->		
 		<script>
 			require([
 				"dojo/parser", 
@@ -41,8 +47,8 @@
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<h1 style="text-align: center;" id="Whoweare_Heading"></h1>
 			
-			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" style="background-color:#6D6D6D"
-						data-dojo-props='height:"400px", navButton:true, numVisible:1, title:""'>
+			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" style="background-color:#6D6D6D" 
+						data-dojo-props='height:"400px", navButton:true, numVisible:1'>
 				<!-- View #1 -->
 				<div data-dojo-type="dojox.mobile.SwapView">
 					<table>
@@ -52,14 +58,12 @@
 								</div>
 							</td>
 							<td>
-								<div style="text-align: left;">
+								<div style="text-align: left;overflow:auto;margin:10px;height:100%;width:100%;">
 									<p id="Whoweare_Para1"></p>
 								</div>
 							</td>
 						</tr>
-					</table>
-					
-					
+					</table>					
 				</div>
 				<!-- View #2 -->
 				<div data-dojo-type="dojox.mobile.SwapView">
