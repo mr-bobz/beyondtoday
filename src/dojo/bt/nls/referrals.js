@@ -1,7 +1,7 @@
 define({root:
 ({	
-	"Title":"Referrals",
-	"Transparency_Heading": "Referrals",
-	"Transparency_Para": "Referrals"
+	"Referrals_title":"Referrals",
+	"Referrals_Heading": "Referrals",
+	"Referrals_Para": "Referrals"
 })
 });
