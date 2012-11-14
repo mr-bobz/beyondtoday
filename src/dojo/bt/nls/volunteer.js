@@ -1,7 +1,7 @@
 define({root:
 ({	
-	"Title":"Volunteer",
-	"Transparency_Heading": "Volunteer",
-	"Transparency_Para": "Volunteer"
+	"Volunteer_Title":"Volunteer",
+	"Volunteer_Heading": "Volunteer",
+	"Volunteer_Para": "Volunteer"
 })
 });
