@@ -2,3 +2,19 @@
 @import url("../dojo/dijit/themes/claro/claro.css");
 @import url("../dojo/dijit/themes/claro/claro_rtl.css");
 @import url("../dojo/dojox/mobile/themes/iphone/iphone.css");
+
+
+.mainContent{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.rowStyle{
+	padding:5px 5px 5px 5px;
+	text-align:left;
+}

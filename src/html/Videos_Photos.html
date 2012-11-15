@@ -14,16 +14,17 @@
 		<script src = "../js/common_requires.js">
 		</script>	
 		<!-- Copy these for all htmls - END -->	
-		<!-- Current html's dojo requires -->	
+		<!-- Current html's dojo requires -->
+		<script>
+			require([ 
+				"dojox/mobile/Carousel",
+				"dojox/mobile/CarouselItem",
+				"dojox/mobile/SwapView"
+			]);		
+		</script>	
 	</head>
 	
 	<body class="claro">
-		<script>
-			require(["dojo/i18n!bt/nls/Index", "dojo/domReady!"], function(nls){
-				dojo.byId("mission_title").innerHTML = nls.mission_title;
-				dojo.byId("mission_para1").innerHTML = nls.mission_para1;
-			});
-		</script>			
 	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
@@ -31,16 +32,10 @@
 			</div>	
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
-			<div class="mainContent">
-				<h1 id="mission_title"></h1>
-				<div style="text-align: left;">
-					<p id="mission_para1"></p>
-				</div>	
-				<video width="640" height="360" preload="none" controls poster="../images/photos/proclamation.jpg">
-				  <source src="../images/videos/proclamation.mp4" type="video/mp4">
-				  <source src="../images/videos/proclamation.ogg" type="video/ogg">
-				  Sorry, your browser does not support the HTML5 video tag!
-				</video>
+			<div class="mainContent" style="text-align:left;">
+				<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props="href: 'Photos_Carousel.html'">
+					Loading... 
+				</div>					
 			</div>	
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		

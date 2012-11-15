@@ -19,9 +19,8 @@
 	
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/Index", "dojo/domReady!"], function(nls){
+			require(["dojo/i18n!bt/nls/DownloadForms", "dojo/domReady!"], function(nls){
 				dojo.byId("mission_title").innerHTML = nls.mission_title;
-				dojo.byId("mission_para1").innerHTML = nls.mission_para1;
 			});
 		</script>			
 	
@@ -33,14 +32,24 @@
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
 				<h1 id="mission_title"></h1>
-				<div style="text-align: left;">
-					<p id="mission_para1"></p>
-				</div>	
-				<video width="640" height="360" preload="none" controls poster="../images/photos/proclamation.jpg">
-				  <source src="../images/videos/proclamation.mp4" type="video/mp4">
-				  <source src="../images/videos/proclamation.ogg" type="video/ogg">
-				  Sorry, your browser does not support the HTML5 video tag!
-				</video>
+				<table border="1" width='100%'>
+					<tr>
+						<td class="rowStyle">
+							Confidentiality Agreement
+						</td>
+						<td class="rowStyle">
+							<a href="../forms/Confidentiality_Agreement.docx">Confidentiality_Agreement.docx</a>
+						</td>						
+					</tr>
+					<tr>
+						<td class="rowStyle">
+							Conflict of Interest Agreement
+						</td>
+						<td class="rowStyle">
+							<a href="../forms/Conflict_of_Interest_Agreement.docx">Conflict_of_Interest_Agreement.docx</a>
+						</td>						
+					</tr>					
+				</table>	
 			</div>	
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
