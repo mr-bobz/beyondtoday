@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>Volunteer Council</title>	
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />				
+		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
+		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
+		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<!-- Load banner requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
+		</script>	
+		<!-- Copy these for all htmls - END -->			
+		<script>
+			require([
+				"dojo/parser", 
+				"dijit/layout/ContentPane",
+				"dojox/mobile/RoundRect",
+				"dojox/mobile/Carousel",
+				"dojox/mobile/compat",
+				"dojox/mobile/CarouselItem",
+				"dojox/mobile/SwapView"
+				
+			]);		
+		</script>		
+	</head>
+	<body class="claro">
+		<script>
+			require(["dojo/i18n!bt/nls/VolunteerCouncil", "dojo/domReady!"], function(nls){
+				dojo.byId("volunteer_title").innerHTML = nls.volunteer_title;
+				dojo.byId("volunteer_para").innerHTML = nls.volunteer_para;
+			
+			});
+		</script>
+	
+	
+	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
+				Loading... 
+			</div>	
+		</div>	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div class="mainContent">
+				<h1 style="text-align: center;" id="volunteer_title"></h1>
+				<div id="volunteer_para">
+				</div>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
+				Loading... 
+			</div>	
+		</div>		
+	</body>
+</html>
