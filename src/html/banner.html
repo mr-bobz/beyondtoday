@@ -10,161 +10,200 @@
 			</a>
 		</td>
 		<td>		
-			<!-- AddThis Button BEGIN -->
-			<div class="addthis_toolbox addthis_default_style ">
-				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-				<a class="addthis_button_tweet"></a>
-				<a class="addthis_button_pinterest_pinit"></a>
-				<a class="addthis_counter addthis_pill_style"></a>
-			</div>
-			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50a5642d1c8a0b9f"></script>
-			<!-- AddThis Button END -->	
-			<div id="socialnetworks" style="float:right; margin-top:5px">
+			<div id="socialnetworks" style="float:right;display: table-cell; vertical-align: middle;">
 				<a href="http://www.facebook.com/pages/Beyond-Today/277550208951784" title="Beyond Today Facebook Page" target="_blank">
 					<img src="../images/facebook.png" alt="facebook">
 				</a>
 				<a href="http://twitter.com/BeyondTodayATX" title="Beyond Today Twitter Page" target="_blank">
 					<img src="../images/twitter.png" alt="twitter">
-				</a>				
+				</a>
+				<a href="https://www.paypal.com/" title="Donate & Support Us" target="_blank">
+					<img src="../images/donate.png" alt="donate">
+				</a>								
 			</div>			
 		</td>
 		</tr>
 	</table>
 	<br/>
-	<div id="toolbar1" data-dojo-type="dijit/Toolbar">
-	<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="showLabel:true">
-	  <span>About Us</span>
-	  <div data-dojo-type="dijit/DropDownMenu" id="aboutus">
-		<div data-dojo-type="dijit/MenuItem">Who We Are
+	
+	<div data-dojo-type="dijit/Toolbar">
+		<div data-dojo-type="dijit/form/Button" id="Home"
+			data-dojo-props="iconClass:'homeIcon',showLabel:true">Home
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("WhoWeAre.html");
-			</script>
+				location.replace("index.html");
+			</script>		
+		</div>	
+		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'aboutIcon',showLabel:true">
+		  <span id="About_Us">About_Us</span>
+		  <div data-dojo-type="dijit/DropDownMenu">
+			<div data-dojo-type="dijit/MenuItem" id="Who_We_Are">Who_We_Are
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("WhoWeAre.html");
+				</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Our_History">Our_History
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("History.html");
+				</script>	
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Advisory_Council">Advisory_Council
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("AdvisoryCouncil.html");
+				</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Provider_Council">Provider_Council
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("ProviderCouncil.html");
+				</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Partner_Council">Partner_Council
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("PartnerCouncil.html");
+				</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Volunteer_Council">Volunteer_Council
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("VolunteerCouncil.html");
+				</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Referrals">Referrals
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("Referrals.html");
+				</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Videos_And_Photos">Videos_And_Photos
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("Videos_Photos.html");
+				</script>
+			</div>
+		  </div>
 		</div>
-		<div data-dojo-type="dijit/MenuItem">Our History
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("History.html");
-			</script>	
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Advisory Council
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("AdvisoryCouncil.html");
-			</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Provider Council
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("ProviderCouncil.html");
-			</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Partner Council
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("PartnerCouncil.html");
-			</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Volunteer Council
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("VolunteerCouncil.html");
-			</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Referrals
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("Referrals.html");
-			</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Videos and Photos
-			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("Videos_Photos.html");
-			</script>
-		</div>
-	  </div>
-	</div>
-	<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="showLabel:true">
-	  <span>Services</span>
-	  <div data-dojo-type="dijit/DropDownMenu" id="services">
-		<div data-dojo-type="dijit/PopupMenuItem">
-        <span>ROSC</span>
-			<div data-dojo-type="dijit/Menu" id="rosc">
-				<div data-dojo-type="dijit/MenuItem">Peer Support
-					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-						location.replace("PeerSupport.html");
-					</script>				
-				</div>
-				<div data-dojo-type="dijit/MenuItem">Recovery
-					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-						location.replace("Recovery.html");
-					</script>
+		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'servicesIcon',showLabel:true">
+		  <span id="Services">Services</span>
+		  <div data-dojo-type="dijit/DropDownMenu">
+			<div data-dojo-type="dijit/PopupMenuItem">
+			<span id="ROSC">ROSC</span>
+				<div data-dojo-type="dijit/Menu">
+					<div data-dojo-type="dijit/MenuItem" id="Peer_Support">Peer_Support
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("PeerSupport.html");
+						</script>				
+					</div>
+					<div data-dojo-type="dijit/MenuItem" id="Recovery">Recovery
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("Recovery.html");
+						</script>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div data-dojo-type="dijit/PopupMenuItem">
-        <span>Changing Minds</span>
-			<div data-dojo-type="dijit/Menu" id="changingminds">
-				<div data-dojo-type="dijit/MenuItem">Education
-					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-						location.replace("Education.html");
-					</script>				
-				</div>
-				<div data-dojo-type="dijit/MenuItem">Informing Policy
-					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-						location.replace("InformingPolicy.html");
-					</script>				
+			<div data-dojo-type="dijit/PopupMenuItem">
+			<span id="Changing_Minds">Changing_Minds</span>
+				<div data-dojo-type="dijit/Menu">
+					<div data-dojo-type="dijit/MenuItem" id="Education">Education
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("Education.html");
+						</script>				
+					</div>
+					<div data-dojo-type="dijit/MenuItem" id="Informing_Policy">Informing_Policy
+						<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+							location.replace("InformingPolicy.html");
+						</script>				
+					</div>
 				</div>
 			</div>
+		  </div>
 		</div>
-	  </div>
-	</div>
-	<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="showLabel:true">
-	  <span>Current Projects</span>
-	  <div data-dojo-type="dijit/DropDownMenu" id="currentprojects">
-		<div data-dojo-type="dijit/MenuItem">Criminal Justice Pilot
+		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'projectsIcon',showLabel:true">
+		  <span id="Current_Projects">Current_Projects</span>
+		  <div data-dojo-type="dijit/DropDownMenu">
+			<div data-dojo-type="dijit/MenuItem" id="Criminal_Justice_Pilot">Criminal_Justice_Pilot
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("CriminalJusticePilot.html");
+				</script>	
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Nationalizing_Peer_Support">Nationalizing_Peer_Support
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("CriminalJusticePilot.html");
-			</script>	
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Nationalizing Peer Support
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("NationalizingPeerSupport.html");
-		</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Building Peer Support Capacity
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("BuildingPeerSupport.html");
-		</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Linking Resources
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("LinkingResources.html");
-		</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Outreach
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("Outreach.html");
-		</script>
-		</div>
-	   </div>
-	</div>
-	<div data-dojo-type="dijit/form/DropDownButton">
-	  <span>How To</span>
-	  <div data-dojo-type="dijit/DropDownMenu" id="howto">
-		<div data-dojo-type="dijit/MenuItem">Donate
+				location.replace("NationalizingPeerSupport.html");
+			</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Building_Peer_Support_Capacity">Building_Peer_Support_Capacity
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-				location.replace("Donate.html");
-			</script>	
+				location.replace("BuildingPeerSupport.html");
+			</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Linking_Resources">Linking_Resources
+			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+				location.replace("LinkingResources.html");
+			</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Outreach">Outreach
+			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+				location.replace("Outreach.html");
+			</script>
+			</div>
+		   </div>
 		</div>
-		<div data-dojo-type="dijit/MenuItem">Volunteer
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("HowToVolunteer.html");
-		</script>
+		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'howToIcon',showLabel:true">
+		  <span id="How_To">How_To</span>
+		  <div data-dojo-type="dijit/DropDownMenu">
+			<div data-dojo-type="dijit/MenuItem"  id="Donate">Donate
+				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+					location.replace("Donate.html");
+				</script>	
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Volunteer">Volunteer
+			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+				location.replace("HowToVolunteer.html");
+			</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Contact_Us">Contact_Us
+			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+				location.replace("Contact.html");
+			</script>
+			</div>
+			<div data-dojo-type="dijit/MenuItem" id="Download_Forms">Download_Forms
+			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+				location.replace("DownloadForms.html");
+			</script>
+			</div>
+		   </div>
 		</div>
-		<div data-dojo-type="dijit/MenuItem">Contact Us
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("Contact.html");
-		</script>
-		</div>
-		<div data-dojo-type="dijit/MenuItem">Download Forms
-		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("DownloadForms.html");
-		</script>
-		</div>
-	   </div>
 	</div>
-</div>
+</div>	
+
+<script>
+	require(["dojo/i18n!bt/nls/banner"], function(nls){
+		dojo.byId("Home").innerHTML = nls.Home;
+		
+		dojo.byId("About_Us").innerHTML = nls.About_Us;
+		dojo.byId("Who_We_Are").innerHTML = nls.Who_We_Are;
+		dojo.byId("Our_History").innerHTML = nls.Our_History;
+		dojo.byId("Advisory_Council").innerHTML = nls.Advisory_Council;
+		dojo.byId("Provider_Council").innerHTML = nls.Provider_Council;
+		dojo.byId("Partner_Council").innerHTML = nls.Partner_Council;
+		dojo.byId("Volunteer_Council").innerHTML = nls.Volunteer_Council;
+		dojo.byId("Referrals").innerHTML = nls.Referrals;
+		dojo.byId("Videos_And_Photos").innerHTML = nls.Videos_And_Photos;
+		
+		dojo.byId("Services").innerHTML = nls.Services;
+		dojo.byId("ROSC").innerHTML = nls.ROSC;
+		dojo.byId("Peer_Support").innerHTML = nls.Peer_Support;
+		dojo.byId("Recovery").innerHTML = nls.Recovery;
+		dojo.byId("Changing_Minds").innerHTML = nls.Changing_Minds;
+		dojo.byId("Education").innerHTML = nls.Education;
+		dojo.byId("Informing_Policy").innerHTML = nls.Informing_Policy;
+		
+		dojo.byId("Current_Projects").innerHTML = nls.Current_Projects;
+		dojo.byId("Criminal_Justice_Pilot").innerHTML = nls.Criminal_Justice_Pilot;
+		dojo.byId("Nationalizing_Peer_Support").innerHTML = nls.Nationalizing_Peer_Support;
+		dojo.byId("Building_Peer_Support_Capacity").innerHTML = nls.Building_Peer_Support_Capacity;
+		dojo.byId("Linking_Resources").innerHTML = nls.Linking_Resources;
+		
+		dojo.byId("How_To").innerHTML = nls.How_To;
+		dojo.byId("Donate").innerHTML = nls.Donate;		
+		dojo.byId("Volunteer").innerHTML = nls.Volunteer;
+		dojo.byId("Contact_Us").innerHTML = nls.Contact_Us;		
+		dojo.byId("Download_Forms").innerHTML = nls.Download_Forms;		
+	});	
+</script>
+

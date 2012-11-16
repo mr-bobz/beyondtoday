@@ -9,7 +9,7 @@ require([
 	"dijit/Menu",
 	"dijit/MenuItem",
 	"dijit/PopupMenuItem",
-	"dijit/layout/ContentPane",
+	"dojox/layout/ContentPane",
 	"dojox/mobile/ContentPane",
 	"dojox/mobile/RoundRect",
 	"dojox/mobile/compat"
