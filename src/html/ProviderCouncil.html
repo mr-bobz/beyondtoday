@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- Copy these for all htmls - BEGIN -->
-		<title>Advisory Council</title>	
+		<title>Provider Council</title>	
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />				
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
@@ -28,12 +28,11 @@
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/AdvisoryCouncil", "dojo/domReady!"], function(nls){
-				dojo.byId("advisory_title").innerHTML = nls.advisory_title;
-				dojo.byId("advisory_para1").innerHTML = nls.advisory_para1;
-				dojo.byId("advisory_para2").innerHTML = nls.advisory_para2;
-				dojo.byId("advisory_para3").innerHTML = nls.advisory_para3;
-				dojo.byId("advisory_para4").innerHTML = nls.advisory_para4;
+			require(["dojo/i18n!bt/nls/ProviderCouncil", "dojo/domReady!"], function(nls){
+				dojo.byId("provider_title").innerHTML = nls.provider_title;
+				dojo.byId("provider_para1").innerHTML = nls.provider_para1;
+				dojo.byId("provider_para2").innerHTML = nls.provider_para2;
+				dojo.byId("provider_para3").innerHTML = nls.provider_para3;
 			});
 		</script>
 	
@@ -46,60 +45,10 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-			<h1 style="text-align: center;" id="advisory_title"></h1>
+			<h1 style="text-align: center;" id="provider_title"></h1>
 			
 			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title:""'>
 				<!-- View #1 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
-					<table>
-						<tr>
-							<td>
-								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Blessing.jpg", footerText:"Dr. Blessing Anyatonwu "'>
-								</div>
-							</td>
-							<td>
-								<div style="text-align: left; margin: 30px;">
-									<p id="advisory_para1"></p>
-								</div>
-							</td>
-						</tr>
-					</table>
-					
-					
-				</div>
-				<!-- View #2 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
-					<table>
-						<tr>
-							<td>
-								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Brad.jpg", footerText:"Dr. Brad Singleton"'>
-								</div>
-							</td>
-							<td>
-								<div style="text-align: left; margin: 30px;">
-									<p id="advisory_para2"></p>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<!-- View #3 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
-					<table>
-						<tr>
-							<td>
-								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Debbie.jpg", footerText:"Debbie Trammell"'>
-								</div>
-							</td>
-							<td>
-								<div style="text-align: left; margin: 30px;">
-									<p id="advisory_para3"></p>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>	
-				<!-- View #4 -->
 				<div data-dojo-type="dojox.mobile.SwapView">
 					<table>
 						<tr>
@@ -109,14 +58,48 @@
 							</td>
 							<td>
 								<div style="text-align: left;  margin: 30px;">
-									<p id="advisory_para4"></p>
+									<p id="provider_para1"></p>
 								</div>
 							</td>
 						</tr>
 					</table>
 				</div>	
+				<!-- View #2 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<table>
+						<tr>
+							<td>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Blessing.jpg", footerText:"Dr. Blessing Anyatonwu "'>
+								</div>
+							</td>
+							<td>
+								<div style="text-align: left; margin: 30px;">
+									<p id="provider_para2"></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+					
+				</div>
+				<!-- View #3 -->
+				<div data-dojo-type="dojox.mobile.SwapView">
+					<table>
+						<tr>
+							<td>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Brad.jpg", footerText:"Dr. Brad Singleton"'>
+								</div>
+							</td>
+							<td>
+								<div style="text-align: left; margin: 30px;">
+									<p id="provider_para3"></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>				
 			</div>	
-			</div>
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">
