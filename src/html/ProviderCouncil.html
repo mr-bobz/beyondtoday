@@ -30,6 +30,7 @@
 		<script>
 			require(["dojo/i18n!bt/nls/ProviderCouncil", "dojo/domReady!"], function(nls){
 				dojo.byId("provider_title").innerHTML = nls.provider_title;
+				dojo.byId("provider_para").innerHTML = nls.provider_para;
 				dojo.byId("provider_para1").innerHTML = nls.provider_para1;
 				dojo.byId("provider_para2").innerHTML = nls.provider_para2;
 				dojo.byId("provider_para3").innerHTML = nls.provider_para3;
@@ -46,6 +47,10 @@
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
 			<h1 style="text-align: center;" id="provider_title"></h1>
+			
+			<div style="text-align: left;">
+				<p id="provider_para"></p>
+			</div>
 			
 			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title:""'>
 				<!-- View #1 -->
