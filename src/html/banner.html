@@ -85,8 +85,16 @@
 		<div data-dojo-type="dijit/PopupMenuItem">
         <span>Changing Minds</span>
 			<div data-dojo-type="dijit/Menu" id="changingminds">
-				<div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){alert('Submenu 1!')}">Education</div>
-				<div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function(){alert('Submenu 2!')}">Informing Policy</div>
+				<div data-dojo-type="dijit/MenuItem">Education
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("Education.html");
+					</script>				
+				</div>
+				<div data-dojo-type="dijit/MenuItem">Informing Policy
+					<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
+						location.replace("InformingPolicy.html");
+					</script>				
+				</div>
 			</div>
 		</div>
 	  </div>
@@ -101,7 +109,7 @@
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Nationalizing Peer Support
 		<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
-			location.replace("index.html");
+			location.replace("NationalizingPeerSupport.html");
 		</script>
 		</div>
 		<div data-dojo-type="dijit/MenuItem">Building Peer Support Capacity

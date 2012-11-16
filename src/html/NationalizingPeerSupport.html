@@ -18,10 +18,9 @@
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/ROSC", "dojo/domReady!"], function(nls){
-				dojo.byId("Recovery_Title").innerHTML = nls.Recovery_Title;
-				dojo.byId("Recovery_Para").innerHTML = nls.Recovery_Para;
-
+			require(["dojo/i18n!bt/nls/CurrentProjects", "dojo/domReady!"], function(nls){
+				dojo.byId("Nationalizing_Title").innerHTML = nls.Nationalizing_Title;
+				dojo.byId("Nationalizing_Para").innerHTML = nls.Nationalizing_Para;
 			});
 		</script>	
 	
@@ -30,12 +29,11 @@
 				Loading... 
 			</div>	
 		</div>	
-		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
-			<h1 style="text-align: center;" id="Recovery_Title"></h1>
-			<div style="text-align: center;">
-				<p id="Recovery_Para"></p>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>				
+			<h1 style="text-align: center;" id="Nationalizing_Title"></h1>
+			<div style="text-align: left;">
+				<p id="Nationalizing_Para"></p>
 			</div>	
-
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'footer.html'">

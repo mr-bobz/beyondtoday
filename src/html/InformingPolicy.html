@@ -1,37 +1,25 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Beyond Today</title>
-		
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>Beyond Today</title>	
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
-		<meta name="apple-mobile-web-app-capable" content="yes" />		
-		
+		<meta name="apple-mobile-web-app-capable" content="yes" />				
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
-		<link rel="shortcut icon" href="favicon.ico"></link>
-		
-		<link rel="stylesheet" type="text/css" href="../themes/main.css">
-		
+		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
 		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
-		<script>
-			require([
-				"dojo",
-				"dojo/parser", 
-				"dijit/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-				"dojox/mobile/Carousel",
-				"dojox/mobile/compat",
-				"dojox/mobile/CarouselItem",
-				"dojox/mobile/SwapView"
-			]);		
+		<!-- Load banner requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
 		</script>	
-	
+		<!-- Copy these for all htmls - END -->	
+		<!-- Current html's dojo requires -->		
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/ChangingMinds", "dojo/domReady!"], function(nls){
-				dojo.byId("main_title").innerHTML = nls.Title;
-				dojo.byId("InformingPolicy_Heading").innerHTML = nls.InformingPolicy_Heading;
+			require(["dojo/i18n!bt/nls/ChangingMind", "dojo/domReady!"], function(nls){
+				dojo.byId("InformingPolicy_Title").innerHTML = nls.InformingPolicy_Title;
 				dojo.byId("InformingPolicy_Para").innerHTML = nls.InformingPolicy_Para;
 			});
 		</script>	
@@ -42,9 +30,7 @@
 			</div>	
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>				
-			<h1 style="text-align: center;" id="main_title"></h1>
-			
-			<h2 id="InformingPolicy_Heading">Informing Policy</h2>
+			<h1 style="text-align: center;" id="InformingPolicy_Title"></h1>
 			<div style="text-align: left;">
 				<p id="InformingPolicy_Para"></p>
 			</div>	

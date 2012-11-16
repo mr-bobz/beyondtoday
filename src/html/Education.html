@@ -1,38 +1,27 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Beyond Today</title>
-		
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>Beyond Today</title>	
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
-		<meta name="apple-mobile-web-app-capable" content="yes" />		
-		
+		<meta name="apple-mobile-web-app-capable" content="yes" />				
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
-		<link rel="shortcut icon" href="favicon.ico"></link>
-		
-		<link rel="stylesheet" type="text/css" href="../themes/main.css">
-		
+		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
 		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
-		<script>
-			require([
-				"dojo",
-				"dojo/parser", 
-				"dijit/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-				"dojox/mobile/Carousel",
-				"dojox/mobile/compat",
-				"dojox/mobile/CarouselItem",
-				"dojox/mobile/SwapView"
-			]);		
+		<!-- Load banner requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
 		</script>	
-	
+		<!-- Copy these for all htmls - END -->	
+		<!-- Current html's dojo requires -->		
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/ChangingMinds", "dojo/domReady!"], function(nls){
-				dojo.byId("main_title").innerHTML = nls.Title;
-				dojo.byId("Education_Heading").innerHTML = nls.Education_Heading;
-				dojo.byId("Education_Para").innerHTML = nls.Education_Para;
+			require(["dojo/i18n!bt/nls/ChangingMind", "dojo/domReady!"], function(nls){
+				dojo.byId("Education_Title").innerHTML = nls.Education_Title;
+				dojo.byId("Education_Heading1").innerHTML = nls.Education_Heading1;
+				dojo.byId("Education_Para1").innerHTML = nls.Education_Para1;
 			});
 		</script>	
 	
@@ -42,11 +31,10 @@
 			</div>	
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>				
-			<h1 style="text-align: center;" id="main_title"></h1>
-			
-			<h2 id="Education_Heading">Education</h2>
+			<h1 style="text-align: center;" id="Education_Title"></h1>			
 			<div style="text-align: left;">
-				<p id="Education_Para"></p>
+				<h3 id="Education_Heading1"></h3>
+				<p id="Education_Para1"></p>
 			</div>	
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
