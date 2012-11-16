@@ -2,32 +2,37 @@
 <link rel="stylesheet" type="text/css" href="../themes/banner.css">
 
 <div>
-	<a href="index.html" title="Home">
-		<img src="../images/logo_small.png" alt="Beyond Today Logo"/> 
-	</a>
-	<div style="float:right;">
+	<table width="100%">
+		<tr>
+		<td>
+			<a href="index.html" title="Home">
+				<img src="../images/logo_small.png" alt="Beyond Today Logo"/> 
+			</a>
+		</td>
+		<td>		
 			<!-- AddThis Button BEGIN -->
-			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-			<a class="addthis_button_preferred_1"></a>
-			<a class="addthis_button_preferred_2"></a>
-			<a class="addthis_button_preferred_3"></a>
-			<a class="addthis_button_preferred_4"></a>
-			<a class="addthis_button_compact"></a>
-			<a class="addthis_counter addthis_bubble_style"></a>
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_pinterest_pinit"></a>
+				<a class="addthis_counter addthis_pill_style"></a>
 			</div>
-			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50a374897dcd7b24"></script>
-			<!-- AddThis Button END -->
-	</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50a5642d1c8a0b9f"></script>
+			<!-- AddThis Button END -->	
+		</td>
+		</tr>
+	</table>
+
 	<div id="toolbar1" data-dojo-type="dijit/Toolbar">
 	<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'aboutIcon', showLabel:true">
 	  <span>About Us</span>
 	  <div data-dojo-type="dijit/DropDownMenu" id="aboutus">
-		<div data-dojo-type="dijit/MenuItem">Who we are?
+		<div data-dojo-type="dijit/MenuItem">Who We Are
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
 				location.replace("WhoWeAre.html");
 			</script>
 		</div>
-		<div data-dojo-type="dijit/MenuItem">Our history
+		<div data-dojo-type="dijit/MenuItem">Our History
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
 				location.replace("History.html");
 			</script>	
