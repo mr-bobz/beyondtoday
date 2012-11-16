@@ -1,7 +1,7 @@
 define({root:
 ({	
 	"Home":"Home",
-	
+		
 	"About_Us":"About Us",
 	"Who_We_Are":"Who We Are",
 	"Our_History":"Our History",
@@ -32,5 +32,6 @@ define({root:
 	"Volunteer":"Volunteer",
 	"Contact_Us":"Contact Us",
 	"Download_Forms":"Download Forms"	
-})
+}),
+es: true
 });

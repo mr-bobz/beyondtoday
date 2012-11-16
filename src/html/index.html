@@ -8,7 +8,13 @@
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
 		<link rel="shortcut icon" href="favicon.ico"></link>		
 		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
-		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
+		<script>
+			dojoConfig = {async: true, 
+				parseOnLoad: true, 
+				mblAlwaysHideAddressBar: true,
+				locale: location.search.match(/locale=([\w\-]+)/) ? RegExp.$1 : "en-us"
+			}
+		</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
 		<!-- Load banner requires here for faster parsing -->		
 		<script src = "../js/common_requires.js">
@@ -22,7 +28,10 @@
 			require(["dojo/i18n!bt/nls/Index", "dojo/domReady!"], function(nls){
 				dojo.byId("mission_title").innerHTML = nls.mission_title;
 				dojo.byId("mission_para1").innerHTML = nls.mission_para1;
+				console.log("dojo.locale:"+dojo.locale);
+				console.dir(nls);
 			});
+			
 		</script>			
 	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
