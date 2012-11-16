@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- Copy these for all htmls - BEGIN -->
-		<title>Beyond Today</title>	
+		<title>Who We Are</title>	
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />				
 		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
@@ -28,12 +28,12 @@
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/About", "dojo/domReady!"], function(nls){
-				dojo.byId("Whoweare_Heading").innerHTML = nls.Whoweare_Heading;
-				dojo.byId("Whoweare_Para1").innerHTML = nls.Whoweare_Para1;
-				dojo.byId("Whoweare_Para2").innerHTML = nls.Whoweare_Para2;
-				dojo.byId("Whoweare_Para3").innerHTML = nls.Whoweare_Para3;
-				dojo.byId("Whoweare_Para4").innerHTML = nls.Whoweare_Para4;
+			require(["dojo/i18n!bt/nls/WhoWeAre", "dojo/domReady!"], function(nls){
+				dojo.byId("whoweare_title").innerHTML = nls.whoweare_title;
+				dojo.byId("whoweare_para1").innerHTML = nls.whoweare_para1;
+				dojo.byId("whoweare_para2").innerHTML = nls.whoweare_para2;
+				dojo.byId("whoweare_para3").innerHTML = nls.whoweare_para3;
+				dojo.byId("whoweare_para4").innerHTML = nls.whoweare_para4;
 			});
 		</script>
 	
@@ -45,21 +45,20 @@
 			</div>	
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
-			<h1 style="text-align: center;" id="Whoweare_Heading"></h1>
+			<h1 style="text-align: center;" id="whoweare_title"></h1>
 			
-			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" style="background-color:#6D6D6D" 
-						data-dojo-props='height:"400px", navButton:true, numVisible:1'>
+			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1'>
 				<!-- View #1 -->
 				<div data-dojo-type="dojox.mobile.SwapView">
 					<table>
 						<tr>
 							<td>
-								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Adam.jpg", footerText:"Adam Slosberg"'>
+								<div data-dojo-type="dojox.mobile.CarouselItem" data-dojo-props='src:"../images/photos/Adam.jpg", footerText:"Adam Slosberg" '>
 								</div>
 							</td>
 							<td>
-								<div style="text-align: left;overflow:auto;margin:10px;height:100%;width:100%;">
-									<p id="Whoweare_Para1"></p>
+								<div style="text-align: left;overflow : auto;margin:30px; height:100%;width:100%;">
+									<p id="whoweare_para1"></p>
 								</div>
 							</td>
 						</tr>
@@ -75,7 +74,7 @@
 							</td>
 							<td>
 								<div style="text-align: left;">
-									<p id="Whoweare_Para2"></p>
+									<p id="whoweare_para2"></p>
 								</div>
 							</td>
 						</tr>
@@ -91,7 +90,7 @@
 							</td>
 							<td>
 								<div style="text-align: left;">
-									<p id="Whoweare_Para3"></p>
+									<p id="whoweare_para3"></p>
 								</div>
 							</td>
 						</tr>
@@ -107,7 +106,7 @@
 							</td>
 							<td>
 								<div style="text-align: left;">
-									<p id="Whoweare_Para4"></p>
+									<p id="whoweare_para4"></p>
 								</div>
 							</td>
 						</tr>
