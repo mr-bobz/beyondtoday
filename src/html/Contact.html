@@ -16,15 +16,15 @@
 		<!-- Copy these for all htmls - END -->			
 		<script>
 			require([
-				"dojo/parser"				
-			]);		
+				"dojo/parser"
+				]);		
 		</script>		
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/VolunteerCouncil", "dojo/domReady!"], function(nls){
-				dojo.byId("volunteer_title").innerHTML = nls.volunteer_title;
-				dojo.byId("volunteer_para").innerHTML = nls.volunteer_para;
+			require(["dojo/i18n!bt/nls/Contact", "dojo/domReady!"], function(nls){
+				dojo.byId("contact_title").innerHTML = nls.contact_title;
+				dojo.byId("contact_para").innerHTML = nls.contact_para;
 			
 			});
 		</script>
@@ -38,8 +38,8 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-				<h1 style="text-align: center;" id="volunteer_title"></h1>
-				<div id="volunteer_para">
+				<h1 style="text-align: center;" id="contact_title"></h1>
+				<div id="contact_para">
 				</div>
 			</div>
 		</div>
