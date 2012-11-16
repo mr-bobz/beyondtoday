@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>Beyond Today</title>	
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />				
+		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
+		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
+		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<!-- Load banner requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
+		</script>	
+		<!-- Copy these for all htmls - END -->	
+		<!-- Current html's dojo requires -->	
+	</head>
+	<body class="claro">
+		<script>
+			require(["dojo/i18n!bt/nls/Outreach", "dojo/domReady!"], function(nls){
+				dojo.byId("Outreach_Heading").innerHTML = nls.Outreach_Heading;
+				dojo.byId("Outreach_Para").innerHTML = nls.Outreach_Para;
+			});
+		</script>
+	
+	
+	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="href: 'banner.html'">
+				Loading... 
+			</div>	
+		</div>	
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
+			<div class="mainContent">
+				<h1 style="text-align: center;" id="Outreach_Heading"></h1>
+				<div style="text-align: left;">
+					<p id="Outreach_Para"></p>
+				</div>		
+			</div>	
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
+			<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props="href: 'footer.html'">
+				Loading... 
+			</div>	
+		</div>		
+	</body>
+</html>
