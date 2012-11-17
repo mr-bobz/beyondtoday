@@ -24,7 +24,8 @@
 		<script>
 			require(["dojo/i18n!bt/nls/VolunteerCouncil", "dojo/domReady!"], function(nls){
 				dojo.byId("volunteer_title").innerHTML = nls.volunteer_title;
-				dojo.byId("volunteer_para").innerHTML = nls.volunteer_para;
+				dojo.byId("volunteer_para1").innerHTML = nls.volunteer_para1;
+				dojo.byId("volunteer_para2").innerHTML = nls.volunteer_para2;
 			
 			});
 		</script>
@@ -40,7 +41,8 @@
 			<div class="mainContent">
 				<h1 id="volunteer_title"></h1>
 				<div style="text-align: left;">
-					<p id="volunteer_para" role="region" aria-label="First Paragraph"></p>
+					<p id="volunteer_para1" role="region" aria-label="First Paragraph"></p>
+					<ul id="volunteer_para2" role="region" aria-label="Second Paragraph"></ul>
 				</div>					
 			</div>
 		</div>
