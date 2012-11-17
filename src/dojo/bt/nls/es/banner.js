@@ -3,7 +3,7 @@ define({root:
 	"Home":"Casa",
 	
 	"About_Us":"Sobre Nosotros",
-	"Who_We_Are":"Quiénes somos",
+	"Who_We_Are":"QuiÃ©nes somos?",
 	"Our_History":"Nuestra Historia",
 	"Advisory_Council":"Consejo Asesor",
 	"Provider_Council":"Provider Council",
@@ -15,9 +15,9 @@ define({root:
 	"Services":"Servicios",
 	"ROSC":"ROSC",
 	"Peer_Support":"Peer Support",
-	"Recovery":"Recuperación",
+	"Recovery":"RecuperaciÃ³n",
 	"Changing_Minds":"Cambiando Mentes",
-	"Education":"Educación",
+	"Education":"EducaciÃ³n",
 	"Informing_Policy":"Informar a la Política",
 	
 	"Current_Projects":"Proyectos Actuales",
