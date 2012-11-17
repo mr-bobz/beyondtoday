@@ -1,6 +1,6 @@
 define({root:
 ({	
 	"Donate_Heading": "Donate",
-	"Donate_Para": "In Progress..."
+	"Donate_Para1": "In Progress..."
 })
 });
