@@ -1,0 +1,60 @@
+.homeIcon{
+	background-image: url("../images/home.png"); 
+	width: 32px;
+	height: 32px;
+}	
+
+.aboutIcon{
+	background-image: url("../images/about.png"); 
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+}	
+
+.servicesIcon{
+	background-image: url("../images/services.png"); 
+	width: 32px;
+	height: 32px;
+}	
+
+.howToIcon{
+	background-image: url("../images/howto.png"); 
+	width: 32px;
+	height: 32px;
+}
+
+.donateIcon{
+	background-image: url("../images/donate.png"); 
+	width: 32px;
+	height: 32px;
+}
+.eligibilityIcon{
+	background-image: url("../images/eligibility.png"); 
+	width: 32px;
+	height: 32px;
+}
+.ethicsIcon{
+	background-image: url("../images/ethics.png"); 
+	width: 32px;
+	height: 32px;
+}
+.othersIcon{
+	background-image: url("../images/others.png"); 
+	width: 32px;
+	height: 32px;
+}
+.volunteerIcon{
+	background-image: url("../images/volunteer.png"); 
+	width: 32px;
+	height: 32px;
+}
+.projectsIcon{
+	background-image: url("../images/projects.png"); 
+	width: 32px;
+	height: 32px;
+}
+.serviceIcon{
+	background-image: url("../images/services.png"); 
+	width: 32px;
+	height: 32px;
+}
