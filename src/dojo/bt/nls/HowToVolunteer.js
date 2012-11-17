@@ -1,6 +1,6 @@
 define({root:
 ({	
 	"HowToVolunteer_Heading": "Volunteer",
-	"HowToVolunteer_Para": "In progress..."
+	"HowToVolunteer_Para1": "In progress..."
 })
 });
