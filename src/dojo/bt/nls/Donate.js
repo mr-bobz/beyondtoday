@@ -1,6 +1,7 @@
-define({root:
-({	
-	"Donate_Heading": "Donate",
-	"Donate_Para1": "In Progress..."
-})
+define({
+	root:({	
+		"Donate_Heading": "Donate",
+		"Donate_Para1": "In Progress..."
+	}),
+	"es": true
 });
