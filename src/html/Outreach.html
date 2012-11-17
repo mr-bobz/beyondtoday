@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<!-- Copy these for all htmls - BEGIN -->
 		<title>Beyond Today</title>	
@@ -20,7 +20,7 @@
 		<script>
 			require(["dojo/i18n!bt/nls/Outreach", "dojo/domReady!"], function(nls){
 				dojo.byId("Outreach_Heading").innerHTML = nls.Outreach_Heading;
-				dojo.byId("Outreach_Para").innerHTML = nls.Outreach_Para;
+				dojo.byId("Outreach_Para1").innerHTML = nls.Outreach_Para1;
 			});
 		</script>
 	
@@ -33,9 +33,9 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-				<h1 style="text-align: center;" id="Outreach_Heading"></h1>
+				<h1 style="text-align: center;" id="Outreach_Heading" role="main"></h1>
 				<div style="text-align: left;">
-					<p id="Outreach_Para"></p>
+					<p id="Outreach_Para1" role="region" aria-label="First Paragraph"></p>
 				</div>		
 			</div>	
 		</div>
