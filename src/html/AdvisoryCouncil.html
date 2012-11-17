@@ -29,7 +29,7 @@
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/AdvisoryCouncil", "dojo/domReady!"], function(nls){
-				dojo.byId("advisory_title").innerHTML = nls.advisory_title;
+		//		dojo.byId("advisory_title").innerHTML = nls.advisory_title;
 				dojo.byId("advisory_para1").innerHTML = nls.advisory_para1;
 				dojo.byId("advisory_para2").innerHTML = nls.advisory_para2;
 				dojo.byId("advisory_para3").innerHTML = nls.advisory_para3;
@@ -46,9 +46,8 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-			<h1 style="text-align: center;" id="advisory_title"></h1>
-			
-			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title:""'>
+						
+			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title:"Advisory Council"'>
 				<!-- View #1 -->
 				<div data-dojo-type="dojox.mobile.SwapView">
 					<table>
