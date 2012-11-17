@@ -1,0 +1,9 @@
+define({root:
+({	
+	"CriminalJusticePilot_Heading": "Justicia Penal Pilot",
+	"CriminalJusticePilot_Para1": "Más allá de la participación de hoy en los paneles de re-entrada y la participación en la Mesa del Consejo de Administración de Justicia de Grant Asesor han conducido a mayores esfuerzos para hallar soluciones a los diversos problemas que surgen en el cruce de la salud mental y la reincidencia criminal. Hemos convocado a una variedad de líderes en ambos campos para consultarle sobre este asunto, lo que resulta en la formación de la Coalición Primero Justicia Penal.",
+	"CriminalJusticePilot_Para2": "Durante el otoño de 2012, la Coalición trabajó para el diseño e implementación de un Piloto de Justicia Penal, que se inició en noviembre de 2012, en el Complejo Correccional del Condado de Travis ubicado en Del Valle. El objetivo del piloto es dar a los internos con problemas mentales apoyo de los compañeros mientras se encuentran en el interior del complejo, así como al salir del complejo. A la salida, más allá de hoy espera facilitar el proceso de reentrada y en última instancia reducir la reincidencia. Más allá de hoy facilitará:",
+	"CriminalJusticePilot_Para3": "<li>Peer Support</li><li>transporte</li><li>viviendas</li><li>alimento</li><li>medicina</li><li>médico</li><li>psiquiatría</li><li>asesoramiento</li><li>La medicina oriental</li><li>acupuntura</li><li>Las redes sociales y la familia</li><li>fe</li><li>educación</li><li>empleo</li><li>Los teléfonos móviles</li><li>psicoterapia</li><li>NutritionCounseling</li><li>Life Coaching Profesional</li><li>Los servicios veterinarios</li>",
+	"CriminalJusticePilot_Para4": "El piloto tendrá una duración de nueve meses. Los primeros tres meses seguirá activamente 50 individuos y el siguiente seis meses disminuirá lentamente la cantidad de servicio mientras se intenta mantener el contacto con los individuos"
+})
+});
