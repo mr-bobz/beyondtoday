@@ -31,17 +31,18 @@
 	</table>
 	<br/>
 	
-	<div data-dojo-type="dijit/Toolbar" role="toolbar" aria-label="Toolbar">
+	<div data-dojo-type="dijit/Toolbar" role="menu" aria-label="Toolbar">
 		<div data-dojo-type="dijit/form/Button"
 			data-dojo-props="iconClass:'homeIcon',showLabel:true">
 			<span id="Home">Home</span>	
 			<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
 				location.replace("index.html");
 			</script>		
-		</div>	
+		</div>
+		
 		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'aboutIcon',showLabel:true">
 		  <span id="About_Us">About_Us</span>
-		  <div data-dojo-type="dijit/DropDownMenu">
+		  <div data-dojo-type="dijit/DropDownMenu" role="menu" aria-label="About Us">
 			<div data-dojo-type="dijit/MenuItem">
 				<span id="Who_We_Are">Who_We_Are</span>
 				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
@@ -94,7 +95,7 @@
 		</div>
 		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'servicesIcon',showLabel:true">
 		  <span id="Services">Services</span>
-		  <div data-dojo-type="dijit/DropDownMenu">
+		  <div data-dojo-type="dijit/DropDownMenu" role="menu" aria-label="Services">
 			<div data-dojo-type="dijit/PopupMenuItem">
 			<span id="ROSC">ROSC</span>
 				<div data-dojo-type="dijit/Menu">
@@ -133,7 +134,7 @@
 		</div>
 		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'projectsIcon',showLabel:true">
 		  <span id="Current_Projects">Current_Projects</span>
-		  <div data-dojo-type="dijit/DropDownMenu">
+		  <div data-dojo-type="dijit/DropDownMenu" role="menu" aria-label="Current Projects">
 			<div data-dojo-type="dijit/MenuItem">
 				<span id="Criminal_Justice_Pilot">Criminal_Justice_Pilot</span>
 				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
@@ -168,7 +169,7 @@
 		</div>
 		<div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'howToIcon',showLabel:true">
 		  <span id="How_To">How_To</span>
-		  <div data-dojo-type="dijit/DropDownMenu">
+		  <div data-dojo-type="dijit/DropDownMenu" role="menu" aria-label="How to">
 			<div data-dojo-type="dijit/MenuItem">
 				<span id="Donate">Donate</span>
 				<script type="dojo/on" data-dojo-event="click" data-dojo-args="evt">
@@ -201,7 +202,6 @@
 <script>
 	require(["dojo/i18n!bt/nls/banner"], function(nls){
 		dojo.byId("Home").innerHTML = nls.Home;
-		
 		dojo.byId("About_Us").innerHTML = nls.About_Us;
 		dojo.byId("Who_We_Are").innerHTML = nls.Who_We_Are;
 		dojo.byId("Our_History").innerHTML = nls.Our_History;
