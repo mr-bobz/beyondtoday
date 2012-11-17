@@ -20,7 +20,9 @@
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/DownloadForms", "dojo/domReady!"], function(nls){
-				dojo.byId("mission_title").innerHTML = nls.mission_title;
+				dojo.byId("main_title").innerHTML = nls.main_title;
+				dojo.byId("Confidentiality_Agreement").innerHTML = nls.Confidentiality_Agreement;
+				dojo.byId("Conflict_of_Interest_Agreement").innerHTML = nls.Conflict_of_Interest_Agreement;
 			});
 		</script>			
 	
@@ -31,19 +33,19 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-				<h1 id="mission_title"></h1>
+				<h1 id="main_title"></h1>
 				<table border="1" width='100%'>
 					<tr>
-						<td class="rowStyle">
-							Confidentiality Agreement
+						<td class="rowStyle" id="Confidentiality_Agreement">
+							Confidentiality_Agreement
 						</td>
 						<td class="rowStyle">
 							<a href="../forms/Confidentiality_Agreement.docx">Confidentiality_Agreement.docx</a>
 						</td>						
 					</tr>
 					<tr>
-						<td class="rowStyle">
-							Conflict of Interest Agreement
+						<td class="rowStyle" id="Conflict_of_Interest_Agreement">
+							Conflict_of_Interest_Agreement
 						</td>
 						<td class="rowStyle">
 							<a href="../forms/Conflict_of_Interest_Agreement.docx">Conflict_of_Interest_Agreement.docx</a>

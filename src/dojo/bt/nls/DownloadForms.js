@@ -1,7 +1,8 @@
 define({
 	root:({	
-		"mission_title":"Download Forms",
-		"mission_para1":"In Progress"
+		"main_title":"Download Forms",
+		"Confidentiality_Agreement":"Confidentiality Agreement",
+		"Conflict_of_Interest_Agreement":"Conflict of Interest Agreement"
 	}),
 	"es":true
 });

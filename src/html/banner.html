@@ -3,11 +3,13 @@
 
 <SCRIPT TYPE="text/javascript" LANGUAGE="javascript">
 	//<!-- PreLoad Wait - Script -->
-	function waitPreloadPage() { //DOM
+	function loadingBanner() { //DOM
 		if (document.getElementById){
+			console.log("loading banner...");
 			document.getElementById('bannerDiv').style.display='none';
 		}
 	}
+	loadingBanner();
 </SCRIPT> 
 
 <div id="bannerDiv">
@@ -35,7 +37,7 @@
 		</td>
 		</tr>
 	</table>
-	<div data-dojo-type="dijit/Toolbar" role="menu" aria-label="Toolbar">
+	<div id="toolbar" data-dojo-type="dijit/Toolbar" role="menu" aria-label="Toolbar">
 		<div data-dojo-type="dijit/form/Button"
 			data-dojo-props="iconClass:'homeIcon',showLabel:true">
 			<span id="Home">Home</span>	
@@ -204,7 +206,7 @@
 </div>	
 
 <script>
-	require(["dojo/i18n!bt/nls/banner"], function(nls){
+	require(["dojo/i18n!bt/nls/banner", "dijit/registry"], function(nls,registry){
 		dojo.byId("Home").innerHTML = nls.Home;
 		dojo.byId("About_Us").innerHTML = nls.About_Us;
 		dojo.byId("Who_We_Are").innerHTML = nls.Who_We_Are;
@@ -235,7 +237,22 @@
 		dojo.byId("Donate").innerHTML = nls.Donate;		
 		dojo.byId("Volunteer").innerHTML = nls.Volunteer;
 		dojo.byId("Contact_Us").innerHTML = nls.Contact_Us;		
-		dojo.byId("Download_Forms").innerHTML = nls.Download_Forms;		
+		dojo.byId("Download_Forms").innerHTML = nls.Download_Forms;			
 	});	
 </script>
 
+
+<SCRIPT TYPE="text/javascript" LANGUAGE="javascript">
+	//<!-- PreLoad Wait - Script -->
+	function loadedBanner() { //DOM
+		if (document.getElementById && document.getElementById('toolbar').className.indexOf("dijitToolbar") > -1){
+			document.getElementById('bannerDiv').style.display='block';
+			console.log("loaded banner...");	
+		}else{
+			console.log("banner still loading..");
+			console.dir(document.getElementById('toolbar'));			
+			setTimeout(loadedBanner,500);
+		}	
+	}	
+	setTimeout(loadedBanner,500);
+</SCRIPT> 
