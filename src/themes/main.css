@@ -40,4 +40,5 @@
 .claro body{
   font-family: Helvetica;
   font-size: 17px;
+   -webkit-text-size-adjust: auto;
 }  
