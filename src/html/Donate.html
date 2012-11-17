@@ -2,19 +2,36 @@
 <html lang="en">
 	<head>
 		<!-- Copy these for all htmls - BEGIN -->
-		<title>Beyond Today</title>	
+		<!-- Copy these for all htmls - BEGIN -->
+		<title>BEYOND TODAY</title>	
+		
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
-		<meta name="apple-mobile-web-app-capable" content="yes" />				
-		<link rel="icon" type="image/ico" href="favicon.ico"></link> 
-		<link rel="shortcut icon" href="favicon.ico"></link>		
+		<meta name="apple-mobile-web-app-capable" content="yes" />	
+		<meta http-equiv="Content-Language" content="en" />		
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta name="description" content="Website of Beyond Today Mental Health Movement">
+		<meta name="keywords" content="Beyond Today, non-profit, recovery, peer support, mental health">
+		<meta name="author" content="Tech-nobles(Anuj,Anurag,Bobby,Latha,Ram,Shilpa)">
+		<meta name="language" content="english">
+		<meta charset="UTF-8">		
+		
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<link rel="shortcut icon" href="favicon.ico">		
 		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
-		<script>dojoConfig = {async: true, parseOnLoad: true, mblAlwaysHideAddressBar: true}</script>
+		
+		<script>
+			dojoConfig = {async: true, 
+				parseOnLoad: true, 
+				mblAlwaysHideAddressBar: true
+				//locale: location.search.match(/locale=([\w\-]+)/) ? RegExp.$1 : "en-us"
+			}
+		</script>
 		<script src='../dojo/dojo/dojo.js'></script>		
-		<!-- Load banner requires here for faster parsing -->		
+		<!-- Load banner and all common requires here for faster parsing -->		
 		<script src = "../js/common_requires.js">
 		</script>	
-		<!-- Copy these for all htmls - END -->	
-		<!-- Current html's dojo requires -->	
+		<!-- Copy these for all htmls - END -->			
+		<!-- Current html's dojo requires, if not in common_requires.js -->	
 	</head>
 	<body class="claro">
 		<script>

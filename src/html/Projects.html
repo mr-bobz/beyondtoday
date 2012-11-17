@@ -1,20 +1,36 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/document.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro.css">
-		<link rel="stylesheet" type="text/css" href="../dojo/dijit/themes/claro/claro_rtl.css">		
-		<link rel="stylesheet" type="text/css" href="../dojo/dojox/mobile/themes/custom/RoundRect.css">	
+<!-- Copy these for all htmls - BEGIN -->
+		<title>BEYOND TODAY</title>	
 		
-		<script>dojoConfig = {async: true, parseOnLoad: true}</script>
-		<script src='../dojo/dojo/dojo.js'></script>		
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />	
+		<meta http-equiv="Content-Language" content="en" />		
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta name="description" content="Website of Beyond Today Mental Health Movement">
+		<meta name="keywords" content="Beyond Today, non-profit, recovery, peer support, mental health">
+		<meta name="author" content="Tech-nobles(Anuj,Anurag,Bobby,Latha,Ram,Shilpa)">
+		<meta name="language" content="english">
+		<meta charset="UTF-8">		
+		
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<link rel="shortcut icon" href="favicon.ico">		
+		<link rel="stylesheet" type="text/css" href="../themes/main.css">		
+		
 		<script>
-			require([
-				"dojo/parser", 
-				"dojox/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-			]);		
-		</script>		
+			dojoConfig = {async: true, 
+				parseOnLoad: true, 
+				mblAlwaysHideAddressBar: true
+				//locale: location.search.match(/locale=([\w\-]+)/) ? RegExp.$1 : "en-us"
+			}
+		</script>
+		<script src='../dojo/dojo/dojo.js'></script>		
+		<!-- Load banner and all common requires here for faster parsing -->		
+		<script src = "../js/common_requires.js">
+		</script>	
+		<!-- Copy these for all htmls - END -->			
+		<!-- Current html's dojo requires, if not in common_requires.js -->	
 	</head>
 	<body class="claro">
 		<script>
@@ -23,9 +39,7 @@
 				dojo.byId("Transparency_Heading").innerHTML = nls.Transparency_Heading;
 				dojo.byId("Transparency_Para").innerHTML = nls.Transparency_Para;
 			});
-		</script>
-	
-	
+		</script>	
 	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div data-dojo-type="dojox/layout/ContentPane" data-dojo-props="href: 'banner.html'">

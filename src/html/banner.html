@@ -16,34 +16,34 @@
 	<table role="presentation" width="100%">
 		<tr>
 		<td>
-			<a href="www.knowbility.org/v/open-air/" title="Open Air Participant Logo" role="link" aria-labelledby="Open Air Participant Logo">
-				<img src="../images/open_air_I_participated.gif" alt="Open Air Logo"/> 
+			<a href="www.knowbility.org/v/open-air/" title="Open Air Participant Logo" role="link" aria-label="Open Air Participant Logo">
+				<img role="img" src="../images/open_air_I_participated.gif" alt="Open Air Logo and Link to Open Air Site"/> 
 			</a>
 		</td>
 		<td>
-			<a href="index.html" title="Beyond Today Logo" role="link" aria-labelledby="Home">
-				<img src="../images/logo_small.png" alt="Beyond Today Logo"/> 
+			<a href="index.html" title="Beyond Today Logo" role="link" aria-label="Home">
+				<img role="img" src="../images/logo_small.png" alt="Beyond Today Logo and Link to Home page"/> 
 			</a>
 		</td>		
 		<td>		
-			<div id="socialnetworks" style="float:right;display: table-cell; vertical-align: middle;" role="region" aria-label="Social Networks & Donate">
-				<a href="http://www.facebook.com/pages/Beyond-Today/277550208951784" role="link" title="Beyond Today Facebook Page" target="_blank">
-					<img src="../images/facebook.png" alt="facebook">
+			<div id="socialnetworks" style="float:right;display: table-cell; vertical-align: middle;" role="region" aria-label="Social Networks & Donate Links">
+				<a href="http://www.facebook.com/pages/Beyond-Today/277550208951784" role="link" title="Beyond Today Facebook Page" alt="Beyond Today Facebook Page Link" target="_blank">
+					<img role="img" src="../images/facebook.png" alt="facebook">
 				</a>
-				<a href="http://twitter.com/BeyondTodayATX" title="Beyond Today Twitter Page" role="link" target="_blank">
-					<img src="../images/twitter.png" alt="twitter">
+				<a href="http://twitter.com/BeyondTodayATX" title="Beyond Today Twitter Page" alt="Beyond Today Twitter Page Link" role="link" target="_blank">
+					<img role="img" src="../images/twitter.png" alt="twitter">
 				</a>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" role="link" title="Donate & Support Us" target="_blank">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" role="link" title="Donate & Support Us" alt="Donate & Support Us Link" target="_blank">
 					<input type="hidden" name="cmd" value="_s-xclick">
 					<input type="hidden" name="hosted_button_id" value="8YTSEMXSPGUG6">
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					<img role="img" alt="empty" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>							
 		</td>
 		</tr>
 	</table>
 	<div role="navigation">
-		<div id="toolbar" data-dojo-type="dijit/Toolbar" role="menu" aria-label="Toolbar">
+		<div id="toolbar" data-dojo-type="dijit/Toolbar" role="menubar" aria-label="Toolbar">
 			<div data-dojo-type="dijit/form/Button"
 				data-dojo-props="iconClass:'homeIcon',showLabel:true">
 				<span id="Home">Home</span>	
@@ -250,7 +250,6 @@
 
 
 <SCRIPT TYPE="text/javascript" LANGUAGE="javascript">
-	//<!-- PreLoad Wait - Script -->
 	function loadedBanner() { //DOM
 		if (document.getElementById && document.getElementById('toolbar').className.indexOf("dijitToolbar") > -1){
 			document.getElementById('bannerDiv').style.display='block';
