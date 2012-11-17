@@ -22,10 +22,9 @@
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/PeerSupport", "dojo/domReady!"], function(nls){
-				dojo.byId("peersupport_title").innerHTML = nls.peersupport_title;
-				dojo.byId("peersupport_para").innerHTML = nls.peersupport_para;
-			
+			require(["dojo/i18n!bt/nls/BuildingPeerSupport", "dojo/domReady!"], function(nls){
+				dojo.byId("PeerSupport_Title").innerHTML = nls.PeerSupport_Title;
+				dojo.byId("PeerSupport_Para").innerHTML = nls.PeerSupport_Para;			
 			});
 		</script>
 	
@@ -38,8 +37,8 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-				<h1 style="text-align: center;" id="peersupport_title"></h1>
-				<div id="peersupport_para">
+				<h1 id="PeerSupport_Title"></h1>
+				<div style="text-align: left;" id="PeerSupport_Para">
 				</div>
 			</div>
 		</div>

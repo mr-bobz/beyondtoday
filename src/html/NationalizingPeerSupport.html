@@ -18,7 +18,7 @@
 	</head>
 	<body class="claro">
 		<script>
-			require(["dojo/i18n!bt/nls/CurrentProjects", "dojo/domReady!"], function(nls){
+			require(["dojo/i18n!bt/nls/NationalizingPeerSupport", "dojo/domReady!"], function(nls){
 				dojo.byId("Nationalizing_Title").innerHTML = nls.Nationalizing_Title;
 				dojo.byId("Nationalizing_Para").innerHTML = nls.Nationalizing_Para;
 			});
@@ -30,10 +30,12 @@
 			</div>	
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true' role="region" aria-label="Nationalizing Peer Support">				
-			<h1 style="text-align: center;" id="Nationalizing_Title"></h1>
-			<div style="text-align: left;">
-				<p id="Nationalizing_Para"></p>
-			</div>	
+			<div class="mainContent">			
+				<h1 style="text-align: center;" id="Nationalizing_Title"></h1>
+				<div style="text-align: left;">
+					<p id="Nationalizing_Para"></p>
+				</div>
+			</div>		
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dojox/layout/ContentPane" data-dojo-props="href: 'footer.html'" role="region" aria-label="Footer">
