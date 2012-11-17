@@ -20,7 +20,7 @@
 		<script>
 			require(["dojo/i18n!bt/nls/Donate", "dojo/domReady!"], function(nls){
 				dojo.byId("Donate_Heading").innerHTML = nls.Donate_Heading;
-				dojo.byId("Donate_Para1").innerHTML = nls.Donate_Para1;
+				//dojo.byId("Donate_Para1").innerHTML = nls.Donate_Para1;
 			});
 		</script>
 	
@@ -34,9 +34,13 @@
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
 				<h1 style="text-align: center;" id="Donate_Heading" role="main"></h1>
-				<div style="text-align: left;">
-					<p id="Donate_Para1" role="region" aria-label="First Paragraph"></p>
-				</div>		
+				<!--<p id="Donate_Para1" role="region" aria-label="First Paragraph"></p>-->
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="8YTSEMXSPGUG6">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>					
 			</div>	
 		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
