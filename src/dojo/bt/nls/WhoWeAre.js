@@ -10,5 +10,6 @@ define({root:
 	
 	"whoweare_para4" : "Sean Kamperman serves as Secretary on the Beyond Today Board of Directors following roles on the Advisory and Executive Councils.  He has worked with Beyond Today since October 2011 and brings a unique blend of strategy, grant-writing, marketing, and program development skills, as well as attention to the needs of various players, particularly peers. Sean works for the Austin Clubhouse, an organization that exists to provide acceptance and empowerment so that adults living with mental health diagnoses can pursue personal goals and play meaningful roles in their communities as co-workers, colleagues, family members, neighbors, and friends.  Sean helps facilitate the Clubhouse &#8220;Work-Ordered Day&#8221; and promotes the development of members&#8217; aspirations through encouragement and strengths-based guidance.  He also designs and directs grants and marketing materials.  Further, Sean is a member of the Young Nonprofit Professional Network of Austin and has volunteered for numerous organizations, including the AISD and the Austin Urban League. More details about Sean can be found on <a href=\"http://www.linkedin.com/pub/sean-kamperman/28/49a/845\" target=\"new tab\">LinkedIn</a> and he can be reached by <a href=\"mailto:sean@beyondtoday.us\">email</a>."
 	
-})
+}),
+"es" : true
 });
