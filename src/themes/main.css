@@ -24,3 +24,11 @@
 	padding-left:1cm;
 	line-height:1.4em !important;
 }
+
+.mblTabBarStandardTab .mblTabBarButton {
+	color: black;
+	font-weight : normal;
+}
+.mblTabBarStandardTab .mblTabBarButtonSelected  {
+	color: white;
+}
