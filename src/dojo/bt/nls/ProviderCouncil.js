@@ -10,5 +10,6 @@ define({root:
 	
 	"provider_para3" : "Veterinarian Dr. Brad Singleton is a graduate of Louisiana State University where he earned his Bachelor's degree and then attended the LSU School of Veterinary Medicine to earn his doctorate. During veterinary school, he was an active member in many organizations.  He served as president for Wildlife, Avian, Zoo, and Exotic Medicine, and was a Senior Co-Chair for the Raptor and Wildlife Rehabilitation Unit.  He was author and co-author of multiple research articles included in major peer-reviewed publications and spent his free time volunteering at a nature center.  One of his most rewarding experiences was volunteering to assist pets that were victims of Hurricane Katrina and their owners.  Brad founded <a href=\"www.southparkaustin.com\">South Park Animal Hospital</a> located in South Austin.<br/><br/>Brad is a staunch advocate within numerous areas of mental health and has seen with his own eyes the effect that animal ownership can have on anyone, especially those with mental health issues.  He routinely assists those that cannot afford traditional veterinary fees and contributes his time and professional skills to Clients of Beyond Today.<br/><br/>More details about Blessing can be found on <a href=\"http://www.linkedin.com/pub/charles-bradley-singleton/1a/518/5ab\" target=\"new tab\">LinkedIn</a> and he can be reached by <a href=\"mailto:cbsingletondvm@gmail.com\">email</a>."
 	
-	})
+	}),
+	"es" : true
 });
