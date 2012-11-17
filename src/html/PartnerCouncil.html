@@ -17,12 +17,13 @@
 		<script>
 			require([
 				"dojo/parser", 
-				"dojox/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-				"dojox/mobile/Carousel",
-				"dojox/mobile/compat",
+				"dojox/mobile/TabBar",
+				"dojox/mobile/TabBarButton",
+				"dojox/mobile/View",
 				"dojox/mobile/CarouselItem",
-				"dojox/mobile/SwapView"
+				"dojox/mobile/compat",
+				"dojox/layout/ContentPane",
+				"dojox/mobile/RoundRect"
 				
 			]);		
 		</script>		
@@ -30,7 +31,7 @@
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/PartnerCouncil", "dijit/registry", "dojo/domReady!"], function(nls, registry){
-			//	dojo.byId("partner_title").innerHTML = nls.partner_title;
+				dojo.byId("partner_title").innerHTML = nls.partner_title;
 				dojo.byId("partner_para1").innerHTML = nls.partner_para1;
 				dojo.byId("partner_para2").innerHTML = nls.partner_para2;
 				dojo.byId("partner_para3").innerHTML = nls.partner_para3;
@@ -49,10 +50,19 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-						
-			<div id="carousel_partner" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title: "Partner Council" '>
+			<h1 style="text-align: center;" id="partner_title"></h1>
+			
+			<ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props='barType:"standardTab"'>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='selected:true,moveTo:"view1"'>Austin State Hospital</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view2"'>Austin Travis County</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view3"'>Austin Clubhouse</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view4"'>Capital Area Counseling 1</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view5"'>Capital Area Counseling 2</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view6"'>NAMI_Austin_logo_email</li>
+			</ul>
+			
 				<!-- View #1 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view1">
 					<table>
 						<tr>
 							<td>
@@ -68,7 +78,7 @@
 					</table>
 				</div>	
 				<!-- View #2 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view2">
 					<table>
 						<tr>
 							<td>
@@ -86,7 +96,7 @@
 					
 				</div>
 				<!-- View #3 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view3">
 					<table>
 						<tr>
 							<td>
@@ -102,7 +112,7 @@
 					</table>
 				</div>
 				<!-- View #4 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view4">
 					<table>
 						<tr>
 							<td>
@@ -118,7 +128,7 @@
 					</table>
 				</div>
 				<!-- View #5 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view5">
 					<table>
 						<tr>
 							<td>
@@ -134,7 +144,7 @@
 					</table>
 				</div>
 				<!-- View #6 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view6">
 					<table>
 						<tr>
 							<td>
@@ -151,7 +161,6 @@
 				</div>
 			</div>				
 			</div>	
-		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dojox/layout/ContentPane" data-dojo-props="href: 'footer.html'">
 				Loading... 

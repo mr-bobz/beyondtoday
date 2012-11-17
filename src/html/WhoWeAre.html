@@ -17,19 +17,21 @@
 		<script>
 			require([
 				"dojo/parser", 
-				"dojox/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-				"dojox/mobile/Carousel",
-				"dojox/mobile/compat",
+				"dojox/mobile/TabBar",
+				"dojox/mobile/TabBarButton",
+				"dojox/mobile/View",
 				"dojox/mobile/CarouselItem",
-				"dojox/mobile/SwapView"
+				"dojox/mobile/compat",
+				"dojox/layout/ContentPane",
+				"dojox/mobile/RoundRect"
+
 			]);		
 		</script>		
 	</head>
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/WhoWeAre", "dojo/domReady!"], function(nls){
-			//	dojo.byId("whoweare_title").innerHTML = nls.whoweare_title;
+				dojo.byId("whoweare_title").innerHTML = nls.whoweare_title;
 				dojo.byId("whoweare_para1").innerHTML = nls.whoweare_para1;
 				dojo.byId("whoweare_para2").innerHTML = nls.whoweare_para2;
 				dojo.byId("whoweare_para3").innerHTML = nls.whoweare_para3;
@@ -46,13 +48,13 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
-				<!--<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"50%", navButton:true, numVisible:1, title: "Who We Are"' >-->
-					<!-- View #1 -->
+				<h1 id="whoweare_title"></h1>
 					
 				<ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props='barType:"standardTab"'>
 				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='selected:true,moveTo:"view1"'>Adam Slosberg</li>
 				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view2"'>Ángela-Jo Touza-Medina</li>
 				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view3"'>Forest</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view4"'>Sean Kamperman</li>
 				</ul>				
 					<div data-dojo-type="dojox.mobile.View" id="view1">
 						<table>
@@ -62,7 +64,7 @@
 									</div>
 								</td>
 								<td>
-									<div style="text-align: left; overflow:auto; margin:30px; height:100%;width:100%;">
+									<div style="text-align: left; margin:30px;">
 										<p id="whoweare_para1"></p>
 									</div>
 								</td>
@@ -78,7 +80,7 @@
 									</div>
 								</td>
 								<td>
-									<div style="text-align: left;">
+									<div style="text-align: left; margin:30px;">
 										<p id="whoweare_para2"></p>
 									</div>
 								</td>
@@ -94,7 +96,7 @@
 									</div>
 								</td>
 								<td>
-									<div style="text-align: left;">
+									<div style="text-align: left; margin:30px;">
 										<p id="whoweare_para3"></p>
 									</div>
 								</td>
@@ -102,7 +104,7 @@
 						</table>
 					</div>	
 					<!-- View #4 -->
-					<div data-dojo-type="dojox.mobile.SwapView">
+					<div data-dojo-type="dojox.mobile.View" id="view4">
 						<table>
 							<tr>
 								<td>
@@ -110,14 +112,13 @@
 									</div>
 								</td>
 								<td>
-									<div style="text-align: left;">
+									<div style="text-align: left; margin:30px;">
 										<p id="whoweare_para4"></p>
 									</div>
 								</td>
 							</tr>
 						</table>
 					</div>	
-				<!--</div>	-->
 				</div>	
 			</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		

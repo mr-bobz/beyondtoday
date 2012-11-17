@@ -17,12 +17,13 @@
 		<script>
 			require([
 				"dojo/parser", 
-				"dojox/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-				"dojox/mobile/Carousel",
-				"dojox/mobile/compat",
+				"dojox/mobile/TabBar",
+				"dojox/mobile/TabBarButton",
+				"dojox/mobile/View",
 				"dojox/mobile/CarouselItem",
-				"dojox/mobile/SwapView"
+				"dojox/mobile/compat",
+				"dojox/layout/ContentPane",
+				"dojox/mobile/RoundRect"
 			]);		
 		</script>		
 	</head>
@@ -52,9 +53,15 @@
 				<p id="provider_para"></p>
 			</div>
 			
-			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title:"Provider Council"'>
+			<ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props='barType:"standardTab"'>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='selected:true,moveTo:"view1"'>Dr. Blessing Anyatonwu</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view2"'>Dr. Brad Singleton</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view3"'>Debbie Trammell</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view4"'>Ruslyn Smith</li>
+			</ul>	
+			
 				<!-- View #1 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view1">
 					<table>
 						<tr>
 							<td>
@@ -70,7 +77,7 @@
 					</table>
 				</div>	
 				<!-- View #2 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view2">
 					<table>
 						<tr>
 							<td>
@@ -88,7 +95,7 @@
 					
 				</div>
 				<!-- View #3 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view3">
 					<table>
 						<tr>
 							<td>

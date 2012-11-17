@@ -17,19 +17,20 @@
 		<script>
 			require([
 				"dojo/parser", 
-				"dojox/layout/ContentPane",
-				"dojox/mobile/RoundRect",
-				"dojox/mobile/Carousel",
-				"dojox/mobile/compat",
+				"dojox/mobile/TabBar",
+				"dojox/mobile/TabBarButton",
+				"dojox/mobile/View",
 				"dojox/mobile/CarouselItem",
-				"dojox/mobile/SwapView"
+				"dojox/mobile/compat",
+				"dojox/layout/ContentPane",
+				"dojox/mobile/RoundRect"
 			]);		
 		</script>		
 	</head>
 	<body class="claro">
 		<script>
 			require(["dojo/i18n!bt/nls/AdvisoryCouncil", "dojo/domReady!"], function(nls){
-		//		dojo.byId("advisory_title").innerHTML = nls.advisory_title;
+				dojo.byId("advisory_title").innerHTML = nls.advisory_title;
 				dojo.byId("advisory_para1").innerHTML = nls.advisory_para1;
 				dojo.byId("advisory_para2").innerHTML = nls.advisory_para2;
 				dojo.byId("advisory_para3").innerHTML = nls.advisory_para3;
@@ -46,10 +47,17 @@
 		</div>	
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>	
 			<div class="mainContent">
+			<h1 id="advisory_title"></h1>
+			
+			<ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props='barType:"standardTab"'>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='selected:true,moveTo:"view1"'>Dr. Blessing Anyatonwu</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view2"'>Dr. Brad Singleton</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view3"'>Debbie Trammell</li>
+				  <li data-dojo-type="dojox/mobile/TabBarButton" data-dojo-props='moveTo:"view4"'>Ruslyn Smith</li>
+			</ul>	
 						
-			<div id="carousel1" data-dojo-type="dojox.mobile.Carousel" data-dojo-props='height:"400px", navButton:true, numVisible:1, title:"Advisory Council"'>
 				<!-- View #1 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view1">
 					<table>
 						<tr>
 							<td>
@@ -63,11 +71,9 @@
 							</td>
 						</tr>
 					</table>
-					
-					
 				</div>
 				<!-- View #2 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view2">
 					<table>
 						<tr>
 							<td>
@@ -83,7 +89,7 @@
 					</table>
 				</div>
 				<!-- View #3 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view3">
 					<table>
 						<tr>
 							<td>
@@ -99,7 +105,7 @@
 					</table>
 				</div>	
 				<!-- View #4 -->
-				<div data-dojo-type="dojox.mobile.SwapView">
+				<div data-dojo-type="dojox.mobile.View" id="view4">
 					<table>
 						<tr>
 							<td>
@@ -116,7 +122,6 @@
 				</div>	
 			</div>	
 			</div>
-		</div>
 		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>		
 			<div data-dojo-type="dojox/layout/ContentPane" data-dojo-props="href: 'footer.html'">
 				Loading... 
